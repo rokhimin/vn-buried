@@ -1,0 +1,1 @@
+{"target_version": 14, "orientation": "sensorLandscape", "package": "com.whdeveloper.vnburied", "include_pil": false, "expansion": false, "name": "VN Buried", "source": false, "icon_name": "VN Buried", "version": "1.2", "layout": null, "permissions": ["VIBRATE"], "include_sqlite": false, "store": "none", "numeric_version": "102"}

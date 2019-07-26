@@ -1,0 +1,31 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While executing init code:
+  File "game/db_video.rpy", line 2, in script
+    image movie = Movie(size=(1280,720),
+  File "game/db_video.rpy", line 6, in <module>
+    yanchor=0)
+AttributeError: 'module' object has no attribute 'hw_video'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "E:\Manga or Novel\Visual Novel\Renpy\Buried\renpy\bootstrap.py", line 285, in bootstrap
+    renpy.main.main()
+  File "E:\Manga or Novel\Visual Novel\Renpy\Buried\renpy\main.py", line 285, in main
+    game.context().run(node)
+  File "game/db_video.rpy", line 2, in script
+    image movie = Movie(size=(1280,720),
+  File "E:\Manga or Novel\Visual Novel\Renpy\Buried\renpy\ast.py", line 846, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "E:\Manga or Novel\Visual Novel\Renpy\Buried\renpy\python.py", line 1406, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/db_video.rpy", line 6, in <module>
+    yanchor=0)
+  File "E:\Manga or Novel\Visual Novel\Renpy\Buried\renpy\display\video.py", line 285, in __init__
+    if (self.channel == "movie") and (renpy.config.hw_video) and renpy.mobile:
+AttributeError: 'module' object has no attribute 'hw_video'
+
+Windows-post2008Server-6.2.9200
+Ren'Py 6.17.7.521
+Visual Novel Buried 1.1
